@@ -13,14 +13,14 @@ app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
 // Local URI
-const DATABASE_URL = "mongodb://127.0.0.1:27017/subscribers";
+// const DATABASE_URL = "mongodb://127.0.0.1:27017/subscribers";
 
 
 // Cluster URI
 // const DATABASE_URL = process.env.DATABASE_URI;
 
 // Connect to MongoDB using Mongoose
-mongoose.connect("mongodb://127.0.0.1:27017", {
+mongoose.connect("DATABASE_URL", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
