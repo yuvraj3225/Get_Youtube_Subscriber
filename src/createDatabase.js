@@ -14,7 +14,7 @@ require("dotenv").config();
 const DATABASE_URL = process.env.DATABASE_URI;
 
 //Connect to MongoDB using Mongoose
-mongoose.connect("mongodb://127.0.0.1:27017", {
+mongoose.connect("DATABASE_URL", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
