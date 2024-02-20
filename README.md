@@ -5,7 +5,7 @@ GET YOUTUBE SUBSCRIBERS
 
 
 <h2 align='center'>
-<a href='' target="_blank">DEMO</a>
+<a href='https://get-youtube-subscriber-v353.vercel.app/' target="_blank">DEMO</a>
 </h2>
 
 ## Table of Contents
@@ -84,7 +84,7 @@ To run this project locally, make sure you have the following installed:
 
 
 ## API Reference
-Following API endpoints for retrieving subscribers information using the GET method. For more refer to the [API-Documentation](./API-Documentation.md).
+
 
 - `/subscribers`: Retrieve a list of all subscribers with their ID, name, subscribed channel and date.
 - `/subscribers/names`: Obtain subscribers name along with the channel they are subscribed to.
@@ -92,7 +92,7 @@ Following API endpoints for retrieving subscribers information using the GET met
 
 
 ## Developer of this Project
-- Abhishek Kumar [GitHub](https://github.com/yuvraj3225) | [LinkedIn](www.linkedin.com/in/yuvraj-lungade-802151241) | 
+- Yuvraj Lungade [GitHub](https://github.com/yuvraj3225) | [LinkedIn](www.linkedin.com/in/yuvraj-lungade-802151241) | 
 
 
 
