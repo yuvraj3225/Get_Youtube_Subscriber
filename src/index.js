@@ -2,6 +2,7 @@
 const express = require("express");
 const app = require("./app.js");
 const mongoose = require("mongoose");
+const Subscriber = require("./models/subscribers");
 const port = process.env.PORT || 3000;
 
 // Configuration of env
@@ -13,14 +14,15 @@ app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
 // Local URI
-const DATABASE_URL = "mongodb://127.0.0.1:27017/subscribers";
+// const DATABASE_URL = "mongodb://127.0.0.1:27017";
 
 
 // Cluster URI
-// const DATABASE_URL = process.env.DATABASE_URI;
+const DATABASE_URL = "mongodb+srv://yuvraj:Yuvraj@42609@cluster0.ktsfymj.mongodb.net/subscriber";  
+//mongodb://127.0.0.1:27017/subscribers  s
 
 // Connect to MongoDB using Mongoose
-mongoose.connect("mongodb://127.0.0.1:27017/subscriber", {
+mongoose.connect("mongodb+srv://yuvraj:Yuvraj@42609@cluster0.ktsfymj.mongodb.net/subscriber", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
