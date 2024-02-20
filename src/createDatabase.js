@@ -8,13 +8,13 @@ require("dotenv").config();
 
 // Connect to DATABASE
 // Local URI
-const DATABASE_URL = "mongodb://127.0.0.1:27017/subscribers";
+const DATABASE_URL = "mongodb://127.0.0.1:27017"
 
 // Cluster URI
-const DATABASE_URL = process.env.DATABASE_URI;
+// const DATABASE_URL = process.env.DATABASE_URI;
 
 //Connect to MongoDB using Mongoose
-mongoose.connect("mongodb://127.0.0.1:27017/subscriber", {
+mongoose.connect("mongodb+srv://yuvraj:Yuvraj@42609@cluster0.ktsfymj.mongodb.net/subscriber", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -25,6 +25,12 @@ db.on("error", (err) => console.log(err));
 
 // If the connection is successful, log a success message
 db.once("open", () => console.log("Database created..."));
+
+  const subscribers = [
+      { name: 'John Doe', subscribedChannel: 'Tech Channel' },
+      { name: 'Jane Doe', subscribedChannel: 'Cooking Channel' },
+      { name: 'Alice Smith', subscribedChannel: 'Gaming Channel' }
+    ];
 
 // Refresh all connections
 const refreshAll = async () => {
